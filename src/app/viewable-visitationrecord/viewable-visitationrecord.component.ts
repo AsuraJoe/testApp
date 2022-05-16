@@ -14,7 +14,6 @@ import { Visit } from '../_visitmodels/visit';
   styleUrls: ['./viewable-visitationrecord.component.css']
 })
 export class ViewableVisitationrecordComponent implements OnInit {
-
   myControl = new FormControl();
   patients: Patient[];
   patientid = ''; // value for setting patientID

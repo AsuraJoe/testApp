@@ -19,4 +19,8 @@ export class PeopleService {
   getDoctors(): Observable<Doctor[]>{
     return this.http.get<Doctor[]>(`${environment.visitAPI}/person/doctor`);
   }
+
+  getPatient(id): Observable<Patient[]> {
+    return this.http.get<Patient[]>(`${environment.visitAPI}/person/patient/`+id);
+  }
 }

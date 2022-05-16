@@ -6,4 +6,5 @@ export interface Entry {
     nurse: string;
     doctor: string;
     status: string;
+    visit_reason:string;
 }

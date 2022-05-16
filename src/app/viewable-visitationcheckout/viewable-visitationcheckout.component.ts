@@ -34,7 +34,9 @@ export class ViewableVisitationcheckoutComponent implements OnInit {
 
   viewRecord(row) {// view Record upon a click
     console.log('Clicked');
-    this.router.navigate(['/home/checkout'], { queryParams: { id: row.patientid } });
+    this.router.navigate(['/home/checkout'], 
+    { queryParams: { visitid: row.visit_id, patientid: row.patientid, visitDate: row.visit_date, 
+      name: row.patient_name, reason: row.visit_reason } });
     // need code for user checkup
   }
 
