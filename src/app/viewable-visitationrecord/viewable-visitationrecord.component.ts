@@ -58,7 +58,7 @@ export class ViewableVisitationrecordComponent implements OnInit {
     console.log(typeof this.formModel.visitDate);
     const visit: Visit = {
       patientid: this.formModel.patientID,
-      status: 'Waiting for triage',
+      status: this.formModel.status,
       visit_reason: this.formModel.visitReason
     };
     console.log(visit);

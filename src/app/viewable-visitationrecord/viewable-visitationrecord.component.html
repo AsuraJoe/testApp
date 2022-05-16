@@ -51,7 +51,9 @@
         <mat-form-field class="status">
             <mat-label>Status</mat-label>
             <mat-select [(ngModel)]="formModel.status"
-            required #status="ngModel" >
+            [class.is-invalid] = "status.invalid && status.touched"
+            required #status="ngModel"
+            name="status" >
               <mat-option *ngFor="let status of statuses" [value] = "status">{{status}}</mat-option>
             </mat-select>
           </mat-form-field>
